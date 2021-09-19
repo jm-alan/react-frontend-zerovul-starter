@@ -7,8 +7,10 @@ const setSession = (user = null) => ({
   user
 });
 
-export const RestoreUser = () => async dispatch => {
+export const Load = () => async dispatch => {
   const { user } = await csrfetch.get('/api/session/');
+  csrfetch.captureDispatch(dispatch);
+  csrfetch.restoreCSRF();
   dispatch(setSession(user));
 };
 

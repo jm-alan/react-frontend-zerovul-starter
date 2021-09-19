@@ -20,7 +20,7 @@
     "snapdragon": "https://github.com/jm-alan/snapdragon-compat.git",
     "source-map-resolve": "^0.6.0",
     "webpack-log": "https://github.com/jm-alan/webpack-log-compat",
-    "workbox-build": "https://github.com/jm-alan/workbox-build-adjusted.git"
+    "workbox-build": "https://github.com/jm-alan/workbox-build-compat.git"
   },
   "scripts": {
     "start": "react-scripts start",
